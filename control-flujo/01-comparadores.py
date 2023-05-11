@@ -1,0 +1,11 @@
+print(1 > 2)  # una expresion es algo que evaluara algo a un resultado
+print(1 < 2)
+print(1 <= 2)
+print(1 >= 2)
+print(2 <= 2)
+print(2 >= 2)
+print(2 == 2)
+print(2 == 3)
+print(2 == "2")
+print(2 != 2)
+print(2 != "2")
