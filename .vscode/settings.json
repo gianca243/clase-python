@@ -1,11 +1,12 @@
 {
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "ms-python.python"
   },
-  "python.formatting.provider": "none",
+  "python.formatting.provider": "autopep8",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
   "files.associations": {
     "*.py": "python"
-  }
+  },
+  "python.linting.pycodestyleEnabled": false
 }
