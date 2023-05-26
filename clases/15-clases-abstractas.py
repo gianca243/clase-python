@@ -1,12 +1,16 @@
-class Model():
-    tabla = False
+from abc import ABC, abstractmethod
 
-    def __init__(self) -> None:
-        if not self.tabla:
-            print("Error, tienes que definir una tabla")
 
+class Model(ABC):
+
+    @property
+    @abstractmethod
+    def tabla(self):
+        pass
+
+    @abstractmethod
     def guardar(self):
-        print(f"Guardando {self.tabla} en BBDD")
+        pass
 
     @classmethod
     def buscar_por_id(self, _id):
@@ -15,6 +19,9 @@ class Model():
 
 class Usuario(Model):
     tabla = "Usuario"
+
+    def guardar(self):
+        print("guardando usuario")
 
 
 usuario = Usuario()
